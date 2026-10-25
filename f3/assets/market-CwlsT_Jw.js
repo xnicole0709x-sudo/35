@@ -1,0 +1,1 @@
+import{x as e}from"./index-Cx_JcGIk.js";const r=()=>e.get("/api/market/overview").then(a=>a.data),m=(a="chg1d")=>e.get("/api/market/sectors",{params:{sort:a}}).then(t=>t.data),n=(a=15)=>e.get("/api/movers",{params:{top:a}}).then(t=>t.data),i=(a,t=250)=>e.get(`/api/market/history/${encodeURIComponent(a)}`,{params:{days:t}}).then(s=>s.data);export{i as a,n as m,r as o,m as s};
